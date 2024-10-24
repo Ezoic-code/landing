@@ -1,0 +1,42 @@
+.btn-black {
+  padding: 10px 25px;
+  font-family: "VT323", monospace;
+  background: transparent;
+  outline: none !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-black {
+  border: 2px solid white;
+  z-index: 1;
+  color: white;
+}
+
+.btn-black:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.btn-black:hover {
+  color: black;
+}
+
+.btn-black:hover:after {
+  top: auto;
+  bottom: 0;
+  height: 100%;
+}
+
+.btn-black {
+    text-decoration: none;
+}
